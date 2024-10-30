@@ -12,8 +12,8 @@ if not os.path.exists(personPath):
     os.makedirs(personPath)
 
 cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
-# si es de un video uysas esto
-#cap = cv2.VideoCapture('Video.mp4')
+# si es de un video uysas esto apuntando a la ruta del video
+#cap = cv2.VideoCapture('Video.mp4') 
 
 faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
 count = 0
